@@ -1,1 +1,1173 @@
-Ecosystem website coming soon
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARLA Ecosystem</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/e3d8263e91.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <div class="header" id="myHeader" style="background-color: rgba(0, 0, 1, 0.753);">
+        <img src="./img/logos/carla_logo_white.png" width="30em" style="display:inline;margin-top:0.3em;">
+        <div style="display: inline-block;height:100%;">
+            <a href="https://www.carla.org">
+                <h3 style="color:white;display: inline;margin-left: 20em;transform:translateY(-1em)">CARLA home</h3>
+            </a>
+            <a href="https://www.carla.org/posts/">
+                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">Blog</h3>
+            </a>
+            <a href="https://carla.readthedocs.io/en/latest/">
+                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">Documentation</h3>
+            </a>
+            <a href="https://github.com/carla-simulator/carla">
+                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">GitHub</h3>
+            </a>
+            <a href="https://www.carla.org/services/">
+                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">Services</h3>
+            </a>
+        </div>
+    </div> -->
+
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img src="./img/logos/carla_logo_white.png" width="40em" style="display:inline;"></li>
+            <li class="item"><a href="https://www.carla.org">CARLA Home</a></li>
+            <li class="item"><a href="https://www.carla.org/posts/">Blog</a></li>
+            <li class="item"><a href="https://carla.readthedocs.io/en/latest/">Documentation</a></li>
+            <li class="item"><a href="https://github.com/carla-simulator/carla">GitHub</a></li>
+            <li class="item"><a href="https://www.carla.org/services/">Services</a></li>
+            <li class="item"><a href="https://www.carla.org/services/">Contact</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div data-scroll-container>
+        <div style="background-color: rgba(0, 0, 0, 1.0);">
+            <section data-scroll-section data-scroll-id="landing_page" id="landing_page" class="landing-page carla-bg"
+                style="display:block;padding:2%;background-color:rgba(0, 0, 0, 1.0);">
+                <div style="height: 8vh;">
+                </div>
+                <h1 class="ecosystem-title"> CARLA Ecosystem</h1>
+                <!-- <img src="./img/logos/carla_logo_black.png"> -->
+                <img class="ecosystem-image" src="./img/lincoln_carla_logo.png">
+            </section>
+        </div>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------INVERTED AI------------------------------------------------------>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="inverted_ai_section" id="inverted_ai_section">
+            <div class="spacer">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1">
+                        <a href="https://www.inverted.ai/home"><img src="./img/logos/inverted_ai_logo.png" width="100%"
+                                data-scroll data-scroll-class="opacity-full" class="transparent-transition"
+                                data-scroll-speed="1"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Inverted AI provides state of the art generative
+                                AI
+                                to
+                                drive realistic, <strong>human-like non-player-character (NPC)</strong> behavior in
+                                driving
+                                simulations. Experts in AI, their mission is to enable the development of autonomous
+                                technology that <strong>safely anticipates human behavior</strong></p>
+                        </div>
+                        <div class="page-flex-item">
+                            <video class="iai-video" autoplay="" loop=""
+                                src="https://amplify-invertedai-dev-104829-deployment.s3.us-west-2.amazonaws.com/drive_stitched_5feb4fd234.mp4"
+                                playsinline="" style="margin: auto; display:block;"></video>
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Inverted AI's products <strong>integrate directly
+                                    with CARLA through APIs</strong>
+                                to bring
+                                complex, realistic traffic behavior into CARLA simulations, accelerating
+                                the development of safe
+                                technology for autonomous vehicles and advanced driver assistance systems. <a
+                                    href="https://www.inverted.ai/"><u>Visit the
+                                        website.</u></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right text-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left: 10%;">
+                    <div class="product-desc-bg">
+                        <h2>Products</h2>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.inverted.ai/products#DRIVE"><strong>DRIVE</strong></a>
+                            </p>
+                            <p class="product-desc">Human-like NPC driving behaviours that are diverse, realistic and
+                                reactive. From an initial scene state, every timestep DRIVE observes new environmental
+                                information around each agent and respectively assigns actions per agent as if a human
+                                were
+                                navigating the scene.</p>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.inverted.ai/products#INITIALIZE"><strong>INITIALIZE</strong></a>
+                            </p>
+                            <p class="product-desc">Diverse, realistic agent placements as if your simulation were
+                                initialized with a real-world snapshot.</p>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.inverted.ai/products#SCENARIO"><strong>SCENARIO</strong></a>
+                            </p>
+                            <p class="product-desc">Whole-scene scenario generation with realistic, reactive agents
+                                including lights, cars, buses, pedestrians and bikes.</p>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.inverted.ai/products#BLAME"><strong>BLAME</strong></a>
+                            </p>
+                            <p class="product-desc">Determine which agents caused collisions and why to automate
+                                efficient,
+                                comprehensive simulation
+                                validation.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a
+                                    href="https://www.inverted.ai/products#TORCHDRIVESIM"><strong>TorchDriveSim</strong></a>
+                            </p>
+                            <p class="product-desc">Open-source, lightweight 2D driving simulator for ADAS/AV controller
+                                development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------SYNKROTRON------------------------------------------------------>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data_scroll data-scroll-section data-scroll-id="synkrotron_section" id="synkrotron_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div data-scrollclass="page-flex-item-1" style="flex-basis:0" data-scroll-speed="1">
+                        <a href="https://www.synkrotron.ai/"><img data-scroll src="./img/logos/synkrotron_logo_eng.png"
+                                width="100%" data-scroll-class="opacity-full" class="transparent-transition"
+                                style="margin-bottom: 1em;"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Synkrotron provides solutions to manage CARLA
+                                driving simulations (OASIS Sim) and simulation data pipelines (OASIS Data) at scale,
+                                through <strong>intuitive web services</strong>, which can be integrated with most
+                                DevOps infrastructure.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img src="./img/synkrotron/oasis.gif" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">OASIS Sim and OASIS Data are provided both as
+                                local solutions and also deployed through the cloud, leveraging scalable cloud services
+                                to parallelize workloads. A CARLA sponsor and consortium member, Synkrotron are
+                                exclusive agents for CARLA in China. <a
+                                    href="https://www.synkrotron.ai/contact.html"><u>Contact them</u></a> for
+                                information about services for
+                                research and industry.</p>
+                        </div>
+                    </div>
+                    <div class="page-flex-item"></div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:10%">
+                    <div class="product-desc-bg">
+                        <h2>Products</h2>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <strong>OASIS Sim</strong>
+                            </p>
+                            <p class="product-desc">GUI-based simulation platform providing visual interfaces for every
+                                step of the AD simulation pipeline, from setup through to diagnosis, with the capacity
+                                to deploy on scalable cloud computing resources.</p>
+
+                            <ul class="product-desc" style="margin-right:5em;">
+                                <li style="padding-bottom:0.3em;">Visual scenario authoring</li>
+                                <li style="padding-bottom:0.3em;">Sensor and vehicle setup</li>
+                                <li style="padding-bottom:0.3em;">Simulation task setup</li>
+                                <li style="padding-bottom:0.3em;">Analysis & Debugging</li>
+                                <li style="padding-bottom:0.3em;">Job management</li>
+                                <li style="padding-bottom:0.3em;">Deployment and integration</li>
+                            </ul>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <strong>OASIS Data</strong>
+                            </p>
+                            <p class="product-desc">OASIS Data streamlines the entire data management pipeline involved
+                                in autonomous vehicle R&D, including acquisition, filtering, annotation as well as
+                                scenario reconstruction. </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <strong>Apollo bridge</strong>
+                            </p>
+                            <p class="product-desc">Apollo is an open-source L4 autonomous driving software stack used
+                                by many OEMs, solution vendors, developers and researchers. The CARLA-Apollo bridge
+                                connects the two popular open-source software packages, enabling Apollo software stacks
+                                to drive the CARLA simulator and receive, assimilate, interpret and visualize data
+                                through the extensively featured Apollo interface. <a
+                                    href="https://github.com/guardstrikelab/carla_apollo_bridge"><u>Go to the GitHub
+                                        repository</u></a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------AVL--------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="avl_section" id="avl_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div data-scroll class="page-flex-item-1" style="flex-basis:0" data-scroll-speed="1"
+                        style="justify-content: center;">
+                        <a href="https://www.avl.com"><img data-scroll src="./img/logos/avl_high_res_large.png" width="100%"
+                            data-scroll-class="opacity-full" class="transparent-transition" style="margin-bottom: 1em;"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">AVL is one of the world’s leading mobility
+                                technology companies for development, simulation and testing in the automotive industry,
+                                and beyond. From ideation phase to serial production, the company covers vehicle
+                                architectures and platform solutions including the impact of new propulsion systems and
+                                energy carriers. As a global technology provider, AVL’s offerings range from simulation,
+                                virtualization and test automation for product development to ADAS/AD and vehicle
+                                software.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img src="./img/avl/avl_brain.jpg" class="company-desc-img">
+                        </div>
+                        <!-- <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">
+                                The company combines state-of-the-art and highly scalable IT, software and
+                                technology solutions with its application know-how, thereby offering customers extensive
+                                tools in areas such as Big Data, Artificial Intelligence, Cybersecurity or Embedded
+                                Systems.</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:10%">
+                    <div class="product-desc-bg">
+                        <h2>Model.CONNECT<sup style="font-size:0.6em"> TM</sup></h2>
+                        <br>
+                        <br>
+                        <div class="page-flex-item" style="font-size: 0.9em">
+                            <div class="page-flex-item">
+                                <img src="./img/avl/model_connect.webp" class="company-desc-img">
+                            </div>
+                            <br>
+                            <p class="product-desc">Model.CONNECT is AVL’s co-simulation and integration platform for
+                                building virtual twins in a heterogeneous tool landscape. Analysis of the single models,
+                                I/O connection and co-simulation control can be performed using GUI or automatized
+                                through API.</p>
+                            <p class="product-desc">Using Model.CONNECT, CARLA environment simulation can be easily
+                                coupled with high fidelity vehicle simulation tools from AVL, such as AVL VSM,
+                                facilitating the development of on- and off-road autonomous vehicles, with both
+                                physically and visually realistic features.</p>
+                            <p class="product-desc">CARLA, combined with AVL simulation tools, is ideal for verification
+                                and validation tests within ADAS/AD automotive design, reducing costs associated with
+                                physical prototyping and real-world testing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------MathWorks---------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="mathworks_section" id="mathworks_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1"
+                        style="flex-basis:0;padding-left:5%;padding-bottom:2%;padding-top:2%;flex-grow:0;">
+                        <a href="https://www.mathworks.com/"><img src="./img/logos/mathworks.png" width="95%" data-scroll
+                                data-scroll-class="opacity-full" class="transparent-transition"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">MathWorks<sup>&reg;</sup> is a leading
+                                developer of
+                                mathematical computing software for engineers and scientists. MATLAB<sup>&reg;</sup>,
+                                Simulink<sup>&reg;</sup> and RoadRunner are
+                                key tools in the autonomous driving ecosystem for developing advanced perception,
+                                planning and
+                                control systems then integrating, testing and deploying them. MATLAB<sup>&reg;</sup> and
+                                Simulink<sup>&reg;</sup> come
+                                with
+                                their own ecosystem of libraries and tools to accelerate development and prototyping
+                            </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/mathworks/rr_scenario_matlab.jpg"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">MATLAB<sup>&reg;</sup> and
+                                Simulink<sup>&reg;</sup> can utilize data generated by
+                                the CARLA simulator for training perception systems, and can be connected directly
+                                through the MATLAB<sup>&reg;</sup> Python interface to interact with the CARLA simulator
+                                for validation
+                                and verification.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:10%">
+                    <div class="product-desc-bg">
+                        <h2>Products</h2>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.mathworks.com/products/roadrunner.html"><strong>RoadRunner</strong></a>
+                            </p>
+                            <p class="product-desc">RoadRunner is an interactive editor for creating 3D scenes
+                                for
+                                simulation and testing of automated driving systems. It is a key tool in the CARLA
+                                ecosystem
+                                for creating road networks in the ASAM OpenDRIVE format. RoadRunner exports in the
+                                OpenDrive
+                                and FBX formats, which can be imported into the CARLA simulator as the basis of the
+                                CARLA
+                                driving simulation. </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.mathworks.com/products/roadrunner-scenario.html"><strong>RoadRunner
+                                        Scenario</strong></a>
+                            </p>
+                            <p class="product-desc">RoadRunner Scenario is an interactive editor for designing the
+                                trajectories, logic, and actions of vehicles and pedestrians in your CARLA simulations.
+                                These dynamic actors can be connected to CARLA using ASAM OpenSCENARIO<sup>&reg;</sup>
+                                XML (1.X) and
+                                ASAM OpenSCENARIO<sup>&reg;</sup> DSL (2.0) exports. RoadRunner Scenario includes MATLAB
+                                and gRPC APIs
+                                for controlling scenarios programmatically and you can set up actor behaviors in
+                                MATLAB<sup>&reg;</sup>
+                                and Simulink<sup>&reg;</sup>. </p>
+                            <img data-scroll src="./img/mathworks/rr_scenario.png" data-scroll-class="opacity-full"
+                                class="company-desc-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------ANSYS--------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="ansys_section" id="ansys_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1"
+                        style="flex-basis:0;padding-left:5%;padding-bottom:2%;padding-top:2%;margin-bottom: 1em;">
+                        <a href="https://www.asam.net/"><img src="./img/logos/ansys_logo.svg" width="95%" data-scroll
+                                data-scroll-class="opacity-full" class="transparent-transition"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Ansys is a globally recognized technology
+                                provider, offering solutions for computer aided engineering and multi-physics simulation
+                                for product design, testing and operation.
+                            </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/lorem_ipsum/lorem_ipsum_graphic.webp"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Ansys provides software for simulation of
+                                structures, electronics and machine components, allowing extensive virtual testing prior
+                                to expensive physical prototyping. Ansys automotive tools can be combined with CARLA for
+                                development of autonomous driving systems and advanced driving assistance systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>Real time RADAR</h2>
+                        <div class="page-flex-item">
+                            <p class="product-desc">Ansys' Real Time Radar (RTR) model is a high-fidelity physics-based
+                                radar simulation
+                                that captures many of the real-world behaviours and artifacts of radar systems. Ansys
+                                RTR
+                                models multiple
+                                radar bounces and captures physics beyond line-of-sight sensing. It also supports a
+                                variety
+                                of electromagnetic
+                                material models.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="page-flex-item">
+                            <img src="./img/ansys/ansys_rtr.webp" class="company-desc-img">
+                        </div>
+                        <br>
+                        <div class="page-flex-item">
+                            <p class="product-desc">The RTR model has been <a
+                                    href="https://drive.google.com/file/d/1xtGaI8Ls6C8Jh-PQvKRrLKs6c3ri3WQ2/view"><u>integrated
+                                        into CARLA</u></a> to bring high-fidelity radar simulation into CARLA
+                                simulations
+                                using the Open Simulation Interface (OSI) to maintaining modularity and
+                                interchangeability
+                                as R&D progresses beyond simulation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------PTV GROUP---------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="ptv_section" id="ptv_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1"
+                        style="flex-basis:0;padding-left:5%;padding-bottom:2%;padding-top:2%;flex-grow:0;">
+                        <a href="https://www.asam.net/"><img src="./img/logos/ptv_group_logo.svg" width="95%"
+                                data-scroll data-scroll-class="opacity-full" class="transparent-transition"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">PTV Group is a leading global software company
+                                for traffic planning, simulation, and real-time management. With more than 40 years of
+                                experience in the fields of mobility, the Germany-based company provides software
+                                products based on proprietary algorithms ranging from microscopic and macroscopic
+                                modeling and simulation of traffic to real-time traffic management, benefiting more than
+                                2,500 cities and municipalities.
+                            </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <video class="iai-video" autoplay="" loop=""
+                                src="https://www.ptvgroup.com/sites/default/files/2023-08/ptvgroup-company-profile-header.mp4"
+                                playsinline="" style="margin: auto; display:block;"></video>
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">PTV offers numerous software solutions for
+                                traffic, transportation and mobility for modeling traffic at macroscopic and
+                                microscopic levels with vehicles, pedestrians and cyclists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>Products</h2>
+                        <div class="page-flex-item">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.ptvgroup.com/en/products/ptv-vissim"><strong>PTV Vissim</strong></a>
+                            </p>
+                            <p class="product-desc">PTV Vissim is a microscopic multi-modal traffic flow simulation
+                                software
+                                package that digitally reproduces vehicles (cars, buses, trucks), public transport,
+                                cyclists
+                                and
+                                pedestrians. PTV Vissim is an industry leading traffic simulation solution trusted by
+                                traffic planners and engineers globally.</p>
+                            <br>
+                            <img data-scroll
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/VISSIM_11_screenshot_-_Luxembourg_Example.png/350px-VISSIM_11_screenshot_-_Luxembourg_Example.png"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                            <br>
+                            <p class="product-desc">PTV Vissim can run in co-simulation with CARLA to bring realistic
+                                traffic
+                                behavior to CARLA simulations. Academia licenses are available for research centers.
+                                <a href="https://www.ptvgroup.com/en/products/ptv-vissim"><u>Get
+                                    in
+                                    touch</u></a> to
+                                request a trial or ask about licensing options.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------Community------------------------------------------------------>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="community_section" id="community_section">
+            <div style="height: 3vh;">
+            </div>
+            <h1 class="community-title">CARLA open-source community</h1>
+            <div style="height: 5vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left">
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">CARLA exists within an ecosystem of open-source
+                                tools
+                                that have broad adoption within the research community and industry of autonomous
+                                vehicles.
+                                The open-source distribution model encourages ongoing development of the tools by a
+                                dedicated
+                                community of developers to keep pace with industry advances, while maintaining
+                                accessibility for academia and students.
+                            </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <br>
+                            <img data-scroll src="./img/carla/carla_opensource.png" data-scroll-class="opacity-full"
+                                class="company-desc-img" style="width: 60%;">
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+                <div data-scroll class="page-flex-column-right">
+                    <div data-scroll class="page-flex-item transparent-transition" id="fixed-target"
+                        data-scroll-class="opacity-full" style="padding-left:20%">
+                        <div class="product-desc-bg">
+                            <div class="page-flex-item lower-border">
+                                <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                    <a href="https://www.inverted.ai/products#DRIVE"><strong>Physics
+                                            simulation</strong></a>
+                                </p>
+                                <p class="product-desc">For applications that require advanced physics
+                                    simulation
+                                    for special vehicle types or off-road applications, CARLA is
+                                    integrated
+                                    with <strong>Chrono</strong>, an open-source multi-physics simulation package to
+                                    serve
+                                    specialized applications.</p>
+                            </div>
+                            <div class="page-flex-item lower-border">
+                                <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                    <a href="https://www.inverted.ai/products#INITIALIZE"><strong>Traffic
+                                            simulation</strong></a>
+                                </p>
+                                <p class="product-desc">CARLA is integrated with <strong>SUMO</strong>, an advanced,
+                                    open-source traffic
+                                    modeling application to achieve enhanced realism or use custom traffic models.
+                                </p>
+                            </div>
+                            <div class="page-flex-item">
+                                <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                    <a href="https://www.inverted.ai/products#INITIALIZE"><strong>ML
+                                            infrastructure</strong></a>
+                                </p>
+                                <p class="product-desc">CARLA integrates with open-source application frameworks built
+                                    to
+                                    accelerate the development of machine learning stacks for autonomous vehicles. The
+                                    <strong>Robot
+                                        Operating System (ROS)</strong> is a robotics middleware suite that provides
+                                    libraries, modules and communication protocols for developing AVs.
+                                    CARLA is also integrated with <strong>Autoware</strong>, a
+                                    ROS-based stack for efficiently building AV solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------Chrono-------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="chrono_section" id="chrono_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1" style="flex-basis:0">
+                        <a href="https://projectchrono.org/"><img src="./img/logos/projectchrono.png" width="80%"
+                                data-scroll data-scroll-class="opacity-full" class="transparent-transition"
+                                data-scroll-speed="0.1" style="margin-bottom: 1em;"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Chrono is an open-source, platform independent
+                                multi-physics modeling and simulation infrastructure implemented in C++. </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/chrono/chrono_humvee.jpeg" width="90%"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Chrono can interface directly with CARLA in
+                                co-simulation, leveraging its powerful physics engine to drive vehicles and other actors
+                                within CARLA through a high-fidelity physics simulation. <a href="https://github.com/projectchrono/chrono"><u>Visit the GitHub repository.</u></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right text-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>Features</h2>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="#"><strong>Multi-body
+                                        dynamics</strong></a>
+                            </p>
+                            <p class="product-desc">Chrono facilitates high-fidelity modeling of mechanisms made of
+                                multiple rigid bodies such as articulated robots and complex vehicles. Motors,
+                                actuators,
+                                springs and dampers can all be added to a model to simulate complex movement.</p>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="#"><strong>Terramechanics</strong></a>
+                            </p>
+                            <p class="product-desc">Chrono serves as a powerful terramechanics modeling tool, with the
+                                capacity to implement soil contact models to simulate deformable terrain such as mud,
+                                sand
+                                or even lunar regolith, broadening CARLA's potential into off-road and industrial
+                                applications.</p>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.inverted.ai/products#INITIALIZE"><strong>Smooth particle
+                                        hydrodynamics</strong></a>
+                            </p>
+                            <p class="product-desc">Chrono features an SPH solver to model the physics of fluid-solid
+                                interactions for bodies of water that autonomous vehicles might encounter, for
+                                example on flooded roads or in off-road applications.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.inverted.ai/products#SCENARIO"><strong>Open API</strong></a>
+                            </p>
+                            <p class="product-desc">Chrono's open API facilitates extensive customization and
+                                interconnectivity with other simulation tools, including CARLA. Chrono's optional plugin
+                                modules open up a vast array of physical modeling techniques to CARLA users.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------Autoware-------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="autoware_section" id="autoware_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1" style="flex-basis:0">
+                        <a href="https://projectchrono.org/"><img src="./img/logos/autoware_logo.png" width="100%"
+                                data-scroll data-scroll-class="opacity-full" class="transparent-transition"
+                                data-scroll-speed="0.1" style="margin-bottom: 1em;"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Autoware is an open-source software stack for
+                                AV R&D, built on top of the Robot Operating System (ROS). It includes all of
+                                the necessary functions to control autonomous vehicles including sensing, perception and
+                                control.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/autoware/autoware_scene.png" width="90%"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Autoware enables developers to concentrate time
+                                on their specific innovations in autonomous driving, avoiding time spent on boilerplate
+                                code
+                                and utility functionality. CARLA developers can build their AV stack in Autoware, while
+                                using CARLA for simulation duties. <a href="https://github.com/autowarefoundation/autoware"><u>Visit the GitHub repository.</u></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>The Autoware stack</h2>
+                        <div class="page-flex-item">
+                            <p class="product-desc">Autoware provides premade modules for all the tasks associated with
+                                autnomous vehicle control, including <strong>sensing,</strong> <strong>mapping</strong>,
+                                <strong>localization</strong>, <strong>perception</strong>, <strong>object
+                                    detection</strong>, <strong>planning</strong> and <strong>control</strong>. This
+                                allows
+                                users to concentrate their efforts on developing their own modules which can be
+                                integrated
+                                into the
+                                Autoware stack with minimal time investment.
+                                Autoware's architecture encapsulates the entire process
+                                from inception to deployment of AV solutions. The open-source codebase
+                                encourages expansion,
+                                customization and community collaboration, accelerating the path from R&D to market.
+                            </p>
+                            <br>
+                            <img data-scroll src="/img/autoware/autoware_stack.webp" data-scroll-class="opacity-full"
+                                class="company-desc-img">
+                            <br>
+                            <p class="product-desc">Autoware can be connected directly to CARLA through CARLA's Python
+                                API
+                                and ROS
+                                interface, enabling immediate testing of Autoware based stacks in CARLA for validation
+                                and
+                                performance testing. Autoware is a powerful companion to CARLA for accelerating the AV
+                                development process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------ROS--------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="ros_section" id="ros_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1"
+                        style="flex-basis:0; background-color: white; padding:1em; padding-top: 1.5em; margin-bottom: 3em;">
+                        <a href="https://www.ros.org/"><img src="./img/logos/ros_logo.png" width="100%" data-scroll
+                                data-scroll-class="opacity-full" class="transparent-transition"
+                                data-scroll-speed="0.1"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">The Robot Operating System (ROS) is an open
+                                source robotics middleware
+                                suite for developers working in robotics and AV. It is language and platform independent
+                                and can be deployed within a networked
+                                computing architecture.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/ros/ros_rviz1.png" width="90%" data-scroll-class="opacity-full"
+                                class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">CARLA offers a ROS interface that allows
+                                ROS-based AV stacks to communicate directly with the CARLA simulator.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>The ROS ecosystem</h2>
+                        <div class="page-flex-item lower-border">
+                            <a href=""><strong>A software library for autonomous vehicles</strong></a>
+                            <p class="product-desc">ROS provides a diverse set of libraries and tools to help with
+                                the legwork of developing
+                                autonomous robots and vehicles. Modules are available that take care of standard tasks
+                                in AV
+                                such as perception, sensing and control. Its wide acceptance within the community means
+                                that
+                                a wealth of modules can be found in repositories for a wide variety of applications.
+                            </p>
+                        </div>
+                        <div class="page-flex-item lower-border">
+                            <br>
+                            <a href=""><strong>Interconnectivity</strong></a>
+                            <p class="product-desc">ROS also provides a standardized communication
+                                protocol that allows multiple ROS-based systems to communicate as nodes over a network.
+                                CARLA's ROS interface enables AV solutions built using ROS to communicate directly with
+                                the
+                                simulator, receiving sensing data and telemetry while sending control inputs through ROS
+                                topics.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <br>
+                            <a href=""><strong>Community</strong></a>
+                            <p class="product-desc">ROS has a wide footprint within the robotics and AV community,
+                                meaning
+                                there is a wealth of repositories online serving a diverse array of applications in
+                                multiple
+                                domains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------SUMO--------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="sumo_section" id="sumo_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1"
+                        style="flex-basis:0; background-color: #338033; padding:1em; padding-top: 1.5em; margin-bottom: 1em;;">
+                        <a href="https://eclipse.dev/sumo/"><img src="./img/logos/sumo_logo.svg" width="100%"
+                                data-scroll data-scroll-class="opacity-full" class="transparent-transition"
+                                data-scroll-speed="0.1"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">SUMO (Simulation of Urban MObility) is an
+                                open-source, multi-modal traffic simulation package designed to handle large traffic
+                                networks. Hosted as an Eclipse Foundation project, it is actively developed by a
+                                dedicated community of developers and is highly
+                                customizable.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/sumo/sumo_intersection.gif" width="90%"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">SUMO can be used in co-simulation with CARLA to
+                                drive advanced traffic behavior inside CARLA simulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>The SUMO traffic simulator</h2>
+                        <div class="page-flex-item">
+                            <p class="product-desc">SUMO facilitates advanced multi-modal traffic simulation, including
+                                multiple vehicle types, public transport, bicycles, pedestrians and traffic lights. It
+                                is
+                                capable of modeling large scale networks with up to 10,000 edges.
+                            </p>
+                            <br>
+                            <img data-scroll src="/img/sumo/sumo_gui.png" data-scroll-class="opacity-full"
+                                class="company-desc-img">
+                            <br>
+                            <p class="product-desc">SUMO's graphical user interface allows for intuitive modeling and
+                                editing of traffic networks. It includes a suite of tools that handle tasks such as
+                                route
+                                finding,
+                                visualization, network import and emissions calculation. SUMO's open-source distribution
+                                model enables developers to integrate custom traffic models for specialized applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------ASAM--------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll data-scroll-section data-scroll-id="asam_section" id="asam_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column-left transparent-transition-fast"
+                    data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1"
+                        style="flex-basis:0;padding-left:5%;padding-bottom:2%;padding-top:2%;background-color: white;margin-bottom: 1em;">
+                        <a href="https://www.asam.net/"><img src="./img/logos/asam_logo.png" width="95%" data-scroll
+                                data-scroll-class="opacity-full" class="transparent-transition"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">ASAM e.V. (Association for Standardization of
+                                Automation and Measuring Systems) is a non-profit organization that promotes
+                                standardization of tool chains in automotive development and testing.
+                            </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">Members include
+                                international car manufacturers, engineering service providers,
+                                and research institutes. ASAM standards are developed by experts from our member
+                                companies and are based on real use cases.</p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/asam/asam_graphic.jpg" width="90%"
+                                data-scroll-class="opacity-full" class="transparent-transition company-desc-img">
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-column-right text-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <div class="product-desc-bg">
+                        <h2>Standards</h2>
+                        <div class="page-flex-item lower-border">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.asam.net/standards/detail/opendrive/"><strong>ASAM
+                                        OpenDRIVE</strong></a>
+                            </p>
+                            <p class="product-desc">Common base for describing road networks with XML syntax, describing
+                                the
+                                geometry of roads, lanes, signals and roadmarks. Derived from synthetic or real road
+                                data.
+                            </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                                <a href="https://www.asam.net/standards/detail/openscenario/"><strong>ASAM
+                                        OpenSCENARIO</strong></a>
+                            </p>
+                            <p class="product-desc">Open standard for describing the dynamic content of scenarios for
+                                use in
+                                driving simulators. It describes the maneuvers of traffic participants like vehicles,
+                                pedestrians, and bicycles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------LOREM IPSUM------------------------------------------------------>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-- <section data-scroll data-scroll-section data-scroll-id="lorem_ipsum_section" id="lorem_ipsum_section">
+            <div style="height: 8vh;">
+            </div>
+            <div class="page-flex-container">
+                <div data-scroll class="page-flex-column transparent-transition-fast" data-scroll-class="opacity-full">
+                    <div class="page-flex-item-1" style="flex-basis:0">
+                        <a href="https://www.inverted.ai/home"><img src="./img/logos/lorem_ipsum_logo.png" width="100%"
+                                data-scroll data-scroll-class="opacity-full" class="transparent-transition"
+                                data-scroll-speed="0.1"></a>
+                    </div>
+                    <div class="company-desc-bg">
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">LOREM IPSUM's mission is to provide state of the
+                                art
+                                tools for autonomy development in the automotive industry. LI's products represent the
+                                culmination of decades of research in robotics and autonomous driving. LI's tools
+                                interface directly with the CARLA simulator to drive vehicle behavior and simulation
+                                environments. </p>
+                        </div>
+                        <div class="page-flex-item">
+                            <img data-scroll src="./img/lorem_ipsum/lorem_ipsum_graphic.webp" width="90%"
+                                data-scroll-class="opacity-full" class="company-desc-img">
+                        </div>
+                        <div class="page-flex-item">
+                            <p class="text-box text-left company-desc">LI's team consists of leading experts in the
+                                industry, coming from globally leading universities and commercial research. <u>Contact
+                                    us</u> for more information on LI services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-scroll class="page-flex-item text-right transparent-transition" id="fixed-target"
+                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    <h2>Products</h2>
+                    <div class="page-flex-item lower-border">
+                        <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                            <a href="https://www.inverted.ai/products#DRIVE"><strong>LI-SIM</strong></a>
+                        </p>
+                        <p class="product-desc">State-of-the-art, realistic driving physics simulator with in-built
+                            sensor suite
+                            and asset library</p>
+                    </div>
+                    <div class="page-flex-item lower-border">
+                        <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                            <a href="https://www.inverted.ai/products#INITIALIZE"><strong>LI-SENSOR</strong></a>
+                        </p>
+                        <p class="product-desc">Powerful virtual sensor design tool to create physically realistic
+                            virtual sensors for simulation</p>
+                    </div>
+                    <div class="page-flex-item lower-border">
+                        <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                            <a href="https://www.inverted.ai/products#SCENARIO"><strong>LI-SCENARIO</strong></a>
+                        </p>
+                        <p class="product-desc">Visual scenario design tool for efficient, intuitive authoring of
+                            scenarios</p>
+                    </div>
+                    <div class="page-flex-item lower-border">
+                        <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                            <a href="https://www.inverted.ai/products#BLAME"><strong>SCENARIO LIBRARY</strong></a>
+                        </p>
+                        <p class="product-desc">Library of canonical scenarios and edge cases ideal for validation and
+                            verification</p>
+                    </div>
+                    <div class="page-flex-item">
+                        <p data-scroll class="transparent-transition" data-scroll-class="opacity-full">
+                            <a href="https://www.inverted.ai/products#TORCHDRIVESIM"><strong>LI-COMMUNITY</strong></a>
+                        </p>
+                        <p class="product-desc">Open source, limited version of LI-SIM for research institutions and
+                            students</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------Final Page------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <section data-scroll-section class="section2 last-section" data-scroll-id="last_section" id="last_section">
+            <div style="height: 8vh;">
+            </div>
+            <a href="https://www.carla.org">
+                <h2 style="color:white">Visit the CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
+            </a>
+            <br>
+            <a href="mailto:carla.simulator@gmail.com">
+                <h2 class="text-left" style="color:white">Contact the CARLA organisation &nbsp;<i
+                        class="fa-solid fa-envelope"></i></h2>
+            </a>
+            <br>
+            <br>
+            <div>
+                <h2 class="text-left" style="color:white;display:inline;margin-right:2em;"><strong>Social
+                        media:</strong></h2>
+                <span><a href="https://www.linkedin.com"><i class="fab fa-linkedin social"></i></a></span>
+                <span><a href="https://www.youtube.com"><i class="fab fa-youtube social"></i></a></span>
+                <span><a href="https://www.twitter.com"><i class="fab fa-twitter social"></i></a></span>
+                <span><a href="https://www.twitter.com"><i class="fab fa-github social"></i></a></span>
+            </div>
+
+        </section>
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+<script>
+    // window.onscroll = function() {myFunction()};
+
+    // // Get the header
+    // var header = document.getElementById("myHeader");
+
+    // // Get the offset position of the navbar
+    // var sticky = header.offsetTop;
+
+    // // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    // function myFunction() {
+    //     console.log(sticky)
+    //     if (window.pageYOffset > sticky) {
+    //         header.classList.add("sticky");
+    //     } else {
+    //         header.classList.remove("sticky");
+    //     }
+    // }
+
+    // var touchMoveCounter = 0;
+    // var touchX = 0;
+
+    // var handleTouchStart = (event) => {
+    //     //console.log(event)
+    //     touchMoveCounter = 0;
+    //     touchX = event.touches[0].screenX;
+    // }
+    // var handleTouchEnd = (event) => {
+    //     touchMoveCounter = 0;
+    //     //console.log('touchend')
+    // }
+    // var handleTouchMove = (event) => {
+    //     console.log(event)
+    //     event.preventDefault()
+    //     if (touchMoveCounter > 10) {
+    //         if (event.touches[0].screenX < touchX) {
+    //             lcolumn = document.getElementsByClassName('page-flex-column-left')
+    //             rcolumn = document.getElementsByClassName('page-flex-column-right')
+    //             lcolumn[0].classList.add('remove-column')
+    //             rcolumn[0].classList.remove('remove-column')
+    //         } else {
+    //             lcolumn = document.getElementsByClassName('page-flex-column-left')
+    //             rcolumn = document.getElementsByClassName('page-flex-column-right')
+    //             rcolumn[0].classList.add('remove-column')
+    //             lcolumn[0].classList.remove('remove-column')
+    //         }
+    //     }
+    //     touchMoveCounter += 1;
+    // }
+
+    // document.body.addEventListener('touchstart', handleTouchStart)
+    // document.body.addEventListener('touchend', handleTouchEnd)
+    // document.body.addEventListener('touchmove', handleTouchMove)
+
+
+    // ************************************************ NAV
+
+    const toggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+
+    /* Toggle mobile menu */
+    function toggleMenu() {
+        if (menu.classList.contains("active")) {
+            menu.classList.remove("active");
+            // adds the menu (hamburger) icon
+            toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
+        } else {
+            menu.classList.add("active");
+            // adds the close (x) icon
+            toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
+        }
+    }
+
+    /* Event Listener */
+
+    toggle.addEventListener("click", toggleMenu, false);
+
+    const items = document.querySelectorAll(".item");
+
+    /* Activate Submenu */
+
+    function toggleItem() {
+        if (this.classList.contains("submenu-active")) {
+            this.classList.remove("submenu-active");
+        } else if (menu.querySelector(".submenu-active")) {
+            menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            this.classList.add("submenu-active");
+        } else {
+            this.classList.add("submenu-active");
+        }
+    }
+
+    /* Event Listeners */
+
+    for (let item of items) {
+        if (item.querySelector(".submenu")) {
+            item.addEventListener("click", toggleItem, false);
+            item.addEventListener("keypress", toggleItem, false);
+        }
+    }
+
+    function closeSubmenu(e) {
+
+        if (menu.querySelector(".submenu-active")) {
+
+            let isClickInside = menu
+
+                .querySelector(".submenu-active")
+
+                .contains(e.target);
+
+            if (!isClickInside && menu.querySelector(".submenu-active")) {
+
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+
+            }
+
+        }
+
+    }
+
+    /* Event listener */
+
+    document.addEventListener("click", closeSubmenu, false);
+
+
+</script>
+
+</html>
