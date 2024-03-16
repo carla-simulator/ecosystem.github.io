@@ -1,4 +1,5 @@
-import LocomotiveScroll from 'locomotive-scroll';
+//import LocomotiveScroll from './js/locomotive-scroll.min.js';
+
 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -8,26 +9,11 @@ const scroll = new LocomotiveScroll({
 var current_section = null;
 var auto_scrolling = false;
 var scroll_count = 0;
-
-// scroll.scrollTo(document.querySelector('#avl_section'), { 'duration': 1000000})
-
-
-// var sections = ['#last-section', '#lorem_ipsum_section', '#community_section', '#ptv_section', '#ansys_section', '#mathworks_section', '#asam_section', '#avl_section', '#synkrotron_section',  '#inverted_ai_section']
-
 var sections = ['#landing_page', '#inverted_ai_section', '#synkrotron_section', '#avl_section', '#mathworks_section', '#ansys_section', '#ptv_section', '#community_section', '#chrono_section', '#autoware_section', '#ros_section', '#sumo_section', '#asam_section', '#last_section']
 var currentSection = 0;
 addEventListener("keypress", (event) => { });
 var scrollLock = false;
 var deltaY = 0;
-
-// onkeypress = (event) => { 
-//     console.log(sections)
-//     var target = sections.pop()
-//     if (target == undefined) {
-//         sections = ['#last-section', '#lorem_ipsum_section', '#community_section', '#ptv_section', '#ansys_section', '#mathworks_section', '#asam_section', '#avl_section', '#synkrotron_section',  '#inverted_ai_section']
-//     }
-//     scroll.scrollTo(document.querySelector(target), { callback: () => { current_section = 'inverted_ai_section';} })
-// };
 
 addEventListener("wheel", (event) => { deltaY = event.deltaY });
 
@@ -70,7 +56,6 @@ var handleTouchEnd = (event) => {
     //console.log('touchend')
 }
 var handleTouchMove = (event) => {
-    //console.log(event)
     //event.preventDefault()
     if (touchMoveCounter > 10) {
         if (event.touches[0].screenX < touchX) {

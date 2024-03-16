@@ -12,7 +12,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/e3d8263e91.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <!-- <script type="module" src="index.js"></script> -->
     <script type="module" src="/js/locomotive-scroll.min.js"></script>
 </head>
 
@@ -1043,61 +1043,86 @@
 
 
 </body>
-<script src="index.js"></script>
+<!-- <script src="index.js"></script> -->
 <script src="js/locomotive-scroll.min.js"></script>
 <script>
-    // window.onscroll = function() {myFunction()};
 
-    // // Get the header
-    // var header = document.getElementById("myHeader");
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
-    // // Get the offset position of the navbar
-    // var sticky = header.offsetTop;
+var current_section = null;
+var auto_scrolling = false;
+var scroll_count = 0;
+var sections = ['#landing_page', '#inverted_ai_section', '#synkrotron_section', '#avl_section', '#mathworks_section', '#ansys_section', '#ptv_section', '#community_section', '#chrono_section', '#autoware_section', '#ros_section', '#sumo_section', '#asam_section', '#last_section']
+var currentSection = 0;
+addEventListener("keypress", (event) => { });
+var scrollLock = false;
+var deltaY = 0;
 
-    // // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    // function myFunction() {
-    //     console.log(sticky)
-    //     if (window.pageYOffset > sticky) {
-    //         header.classList.add("sticky");
-    //     } else {
-    //         header.classList.remove("sticky");
-    //     }
-    // }
+addEventListener("wheel", (event) => { deltaY = event.deltaY });
 
-    // var touchMoveCounter = 0;
-    // var touchX = 0;
+addEventListener("resize", (event) => { scrollLock = true; setTimeout(() => { scrollLock = false;}, 100)});
 
-    // var handleTouchStart = (event) => {
-    //     //console.log(event)
-    //     touchMoveCounter = 0;
-    //     touchX = event.touches[0].screenX;
-    // }
-    // var handleTouchEnd = (event) => {
-    //     touchMoveCounter = 0;
-    //     //console.log('touchend')
-    // }
-    // var handleTouchMove = (event) => {
-    //     console.log(event)
-    //     event.preventDefault()
-    //     if (touchMoveCounter > 10) {
-    //         if (event.touches[0].screenX < touchX) {
-    //             lcolumn = document.getElementsByClassName('page-flex-column-left')
-    //             rcolumn = document.getElementsByClassName('page-flex-column-right')
-    //             lcolumn[0].classList.add('remove-column')
-    //             rcolumn[0].classList.remove('remove-column')
-    //         } else {
-    //             lcolumn = document.getElementsByClassName('page-flex-column-left')
-    //             rcolumn = document.getElementsByClassName('page-flex-column-right')
-    //             rcolumn[0].classList.add('remove-column')
-    //             lcolumn[0].classList.remove('remove-column')
-    //         }
-    //     }
-    //     touchMoveCounter += 1;
-    // }
+scroll.on('scroll', (args) => {
+    if (!scrollLock) {
+        scroll_count += 1;
+    }
+    console.log(currentSection)
+    if (scroll_count > 10 & !scrollLock) {
+        console.log('move')
+        scrollLock = true;
+        scroll_count = 0;
+        if (deltaY > 0) {
+            currentSection += 1;
+        } else {
+            currentSection -= 1;
+        }
+        if (currentSection < 0) { currentSection = 0; }
+        if (currentSection >= sections.length) { currentSection = sections.length - 1 }
+        scroll.scrollTo(document.querySelector(sections[currentSection]), { duration: 200, callback: () => { setTimeout(function () { console.log(sections[currentSection]); scrollLock = false; }, 1000) } })
+    }
+})
 
-    // document.body.addEventListener('touchstart', handleTouchStart)
-    // document.body.addEventListener('touchend', handleTouchEnd)
-    // document.body.addEventListener('touchmove', handleTouchMove)
+var touchMoveCounter = 0;
+
+var touchX = 0;
+var touchY = 0;
+var lcolumn = null;
+var rcolumn = null;
+
+var handleTouchStart = (event) => {
+    //console.log(event)
+    touchMoveCounter = 0;
+    touchX = event.touches[0].screenX;
+}
+var handleTouchEnd = (event) => {
+    touchMoveCounter = 0;
+    //console.log('touchend')
+}
+var handleTouchMove = (event) => {
+    //event.preventDefault()
+    if (touchMoveCounter > 10) {
+        if (event.touches[0].screenX < touchX) {
+            lcolumn = document.getElementsByClassName('page-flex-column-left')
+            rcolumn = document.getElementsByClassName('page-flex-column-right')
+            lcolumn[0].classList.add('remove-column')
+            rcolumn[0].classList.remove('remove-column')
+        } else {
+            lcolumn = document.getElementsByClassName('page-flex-column-left')
+            rcolumn = document.getElementsByClassName('page-flex-column-right')
+            rcolumn[0].classList.add('remove-column')
+            lcolumn[0].classList.remove('remove-column')
+        }
+    }
+    touchMoveCounter += 1;
+}
+
+document.body.addEventListener('touchstart', handleTouchStart)
+document.body.addEventListener('touchend', handleTouchEnd)
+document.body.addEventListener('touchmove', handleTouchMove)
+
 
 
     // ************************************************ NAV
@@ -1147,29 +1172,17 @@
     }
 
     function closeSubmenu(e) {
-
         if (menu.querySelector(".submenu-active")) {
-
             let isClickInside = menu
-
                 .querySelector(".submenu-active")
-
-                .contains(e.target);
-
+                 .contains(e.target);
             if (!isClickInside && menu.querySelector(".submenu-active")) {
-
                 menu.querySelector(".submenu-active").classList.remove("submenu-active");
-
             }
-
         }
-
     }
-
     /* Event listener */
-
     document.addEventListener("click", closeSubmenu, false);
-
 
 </script>
 
