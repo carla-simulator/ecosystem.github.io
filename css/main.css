@@ -123,6 +123,9 @@ p {
 .company-desc-bg {
     background-color: rgba(240, 248, 255, 0.425);
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-desc-bg {
@@ -132,6 +135,9 @@ p {
     padding-right: 1em;
     padding-bottom: 1em;
     padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .company-desc-img {
@@ -244,9 +250,9 @@ section:last-child {
 
 
 .page-flex-item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 0; */
     justify-content: center;
     align-items: center;
 }
