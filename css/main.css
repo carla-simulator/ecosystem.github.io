@@ -2,55 +2,8 @@
     box-sizing: border-box;
 }
 
- /* Style the header */
- /* .header {
-    padding: 10px 10px 10px;
-    color: #f1f1f1;
-    z-index: 100;
-    border-bottom: 1px solid #555;
-    font-size: small;
-    position: fixed;
-    width: 100%;
-  } */
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
-    position: sticky;
-    top: 0;
-    width: 100%
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-  } 
-
-.demo-wrap {
-    overflow: hidden;
-    position: relative;
-}
-
-.demo-bg {
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100px;
-}
-
-.demo-content {
-    position: relative;
-}
-
-
 body {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     /* font-family: Montserrat, sans-serif; */
     font-family: 'Bai Jamjuree', sans-serif;
@@ -60,8 +13,37 @@ body {
     text-align: justify;
     word-break: normal;
     /* background-color: #d4d5d8ef; */
-    /* background-image: url('/img/lincoln_bg.png'); */
-    /* background-size: cover; */
+    background-image: url('../img/lincoln_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
+}
+
+section {
+    height: 100vh;
+    padding: 10vw;
+    padding-top: 8vh;
+    position: relative;
+}
+
+section:first-child {
+    background-color: rgba(192, 184, 214, 0.85);
+    /* background: rgba(0, 0, 255, 0.86); */
+}
+
+section:nth-child(2n) {
+    background-color: rgba(179, 194, 206, 0.95);
+}
+
+section:nth-child(2n+1) {
+    background-color: rgba(179, 194, 206, 0.85);
+}
+
+section:last-child {
+    background: rgba(52, 131, 151, 0.89);
+    color: white;
 }
 
 .ecosystem-title {
@@ -81,13 +63,41 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    animation: fadeIn 5s;
+    animation: fadeIn 2s;
 }
 
 .ecosystem-image {
     display: block;
     width: 100%;
     animation: fadeIn 3s;
+}
+
+.company-desc-bg {
+    background-color: rgba(240, 248, 255, 0.7);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.company-desc-img {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    display: block;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.product-desc-bg {
+    background-color: rgba(240, 248, 255, 0.7);
+    border-radius: 3px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 @keyframes fadeIn {
@@ -120,67 +130,9 @@ p {
     font-size: small;
 }
 
-.company-desc-bg {
-    background-color: rgba(240, 248, 255, 0.425);
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.product-desc-bg {
-    background-color: rgba(240, 248, 255, 0.425);
-    border-radius: 3px;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.company-desc-img {
-    margin: 0 auto;
-    margin-bottom: 1em;
-    display: block;
-    border-radius: 5px;
-    width: 90%;
-}
-
-section {
-    height: 100vh;
-    padding: 10vw;
-    padding-top: 8vh;
-    position: relative;
-    background-color: rgba(234, 234, 255, 0.89);
-    /* background-image: url('/img/lincoln_bg.png'); */
-    background-size: cover;
-    /* background:rgba(52, 131, 151, 0.103) */
-}
-
 .carla-bg {
     background-size: cover;
     background-image: url('/img/lincoln_carla.png');
-}
-
-section:first-child {
-    background: rgba(234, 234, 255, 0.86);
-    /* background: rgb(7,0,119);
-    background: linear-gradient(138deg, rgba(7,0,119,1) 17%, rgba(9,9,121,1) 77%, rgba(0,212,255,1) 100%); */
-}
-
-section:nth-child(2n) {
-    background: rgba(234, 234, 255, 0.918);
-}
-
-section:nth-child(2n+1) {
-    background: rgba(234, 234, 255, 0.86);
-}
-
-section:last-child {
-    background: rgba(52, 131, 151, 0.89);
-    color: white;
 }
 
 .page-flex-container {
@@ -265,7 +217,6 @@ section:last-child {
 }
 
 .landing-page {
-    /* background-image: url("/img/logos/autoware_logo.png"); */
     opacity: 0.9;
     display: flex;
     justify-content: center;
@@ -373,85 +324,5 @@ section p {
 
 
 
-/* Image Gallery styles */
 
-svg {
-    position: absolute;
-  }
-  .container {
-    position: relative;
-  }
-  .image-gallery {
-      display:flex;
-      flex-direction: column;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:10px;
-      position:absolute;
-  }
-  .image-gallery > li {
-      flex-basis: 30%;
-  }
-  .image-gallery li img {
-      object-fit:cover;
-      max-width: 100%;
-      height: auto;
-      vertical-align: middle;
-      border-radius: 5px;
-      background-color: white;
-  }
-  /* .image-gallery::after {
-      content:"";
-      flex-basis:350px;
-  } */
-  .image-gallery > li {
-      /* ... */
-      position: relative;
-      cursor: pointer;
-  }
-  .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(57, 57, 57, 0.802);
-      top: 0;
-      left: 0;
-      transform: scale(0);
-      transition: all 0.2s 0.1s ease-in-out;
-      color: #fff;
-      border-radius: 5px;
-      /* center overlay text */
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-      justify-content: center;
-  }
-  .image-gallery li:hover .overlay {
-      transform: scale(1);
-  }
-  ul {
-      /* list-style: none; */
-  }
-  .center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .text-container-title {
-    padding-left:15%;
-    padding-right:15%;
-    display: block;
-    text-align:center;
-  }
-  .text-container {
-    padding-left:10%;
-    padding-right:10%;
-    display: block;
-  }
-  .text-container li {
-   list-style: circle;
-   list-style-type: circle;
-  
-  }
 
