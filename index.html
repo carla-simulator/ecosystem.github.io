@@ -17,28 +17,7 @@
 
 <body>
 
-    <!-- <div class="header" id="myHeader" style="background-color: rgba(0, 0, 1, 0.753);">
-        <img src="./img/logos/carla_logo_white.png" width="30em" style="display:inline;margin-top:0.3em;">
-        <div style="display: inline-block;height:100%;">
-            <a href="https://www.carla.org">
-                <h3 style="color:white;display: inline;margin-left: 20em;transform:translateY(-1em)">CARLA home</h3>
-            </a>
-            <a href="https://www.carla.org/posts/">
-                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">Blog</h3>
-            </a>
-            <a href="https://carla.readthedocs.io/en/latest/">
-                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">Documentation</h3>
-            </a>
-            <a href="https://github.com/carla-simulator/carla">
-                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">GitHub</h3>
-            </a>
-            <a href="https://www.carla.org/services/">
-                <h3 style="color:white;display: inline;margin-left: 5em;transform:translateY(-1em)">Services</h3>
-            </a>
-        </div>
-    </div> -->
-
-    <nav>
+    <nav id="nav">
         <ul class="menu">
             <li class="logo"><img src="./img/logos/carla_logo_white.png" width="40em" style="display:inline;"></li>
             <li class="item"><a href="https://www.carla.org">CARLA Home</a></li>
@@ -985,7 +964,6 @@ var auto_scrolling = false;
 var scroll_count = 0;
 var sections = ['#landing_page', '#inverted_ai_section', '#synkrotron_section', '#avl_section', '#mathworks_section', '#ansys_section', '#ptv_section', '#community_section', '#chrono_section', '#autoware_section', '#ros_section', '#sumo_section', '#asam_section', '#last_section']
 var currentSection = 0;
-addEventListener("keypress", (event) => { });
 var scrollLock = false;
 var deltaY = 0;
 
@@ -1010,6 +988,12 @@ scroll.on('scroll', (args) => {
         if (currentSection < 0) { currentSection = 0; }
         if (currentSection >= sections.length) { currentSection = sections.length - 1 }
         scroll.scrollTo(document.querySelector(sections[currentSection]), { duration: 200, callback: () => { setTimeout(function () { console.log(sections[currentSection]); scrollLock = false; }, 1000) } })
+    }
+    if (deltaY > 0) {
+        nav = document.getElementById("nav");
+        nav.classList.add('hidenav')
+    } else {
+        nav.classList.remove('hidenav')
     }
 })
 
