@@ -33,6 +33,7 @@ section {
     padding-right: 10vw;
     padding-bottom: 5vh;
     padding-top: 8vh;
+    overflow: hidden;
     /* position: relative; */
     /* box-sizing: content-box; */
 }
@@ -185,6 +186,10 @@ p {
         height: 8vh;
     }
 
+    .landing-page-spacer {
+        height: 8vh;
+    }
+    
     .page-flex-column-right {
         display: flex;
         flex-direction: column;
@@ -203,6 +208,10 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .landing-page-spacer {
+        height: 15vh;
+    }
 
     .page-flex-column-right {
         display: flex;
