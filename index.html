@@ -1070,36 +1070,33 @@
     var lcolumn = null;
     var rcolumn = null;
 
-    var handleTouchStart = (event) => {
-        //console.log(event)
-        touchMoveCounter = 0;
-        touchX = event.touches[0].screenX;
-    }
-    var handleTouchEnd = (event) => {
-        touchMoveCounter = 0;
-        //console.log('touchend')
-    }
-    var handleTouchMove = (event) => {
-        //event.preventDefault()
-        if (touchMoveCounter > 10) {
-            if (event.touches[0].screenX < touchX) {
-                lcolumn = document.getElementsByClassName('page-flex-column-left')
-                rcolumn = document.getElementsByClassName('page-flex-column-right')
-                lcolumn[0].classList.add('remove-column')
-                rcolumn[0].classList.remove('remove-column')
-            } else {
-                lcolumn = document.getElementsByClassName('page-flex-column-left')
-                rcolumn = document.getElementsByClassName('page-flex-column-right')
-                rcolumn[0].classList.add('remove-column')
-                lcolumn[0].classList.remove('remove-column')
-            }
-        }
-        touchMoveCounter += 1;
-    }
+    // var handleTouchStart = (event) => {
+    //     touchMoveCounter = 0;
+    //     touchX = event.touches[0].screenX;
+    // }
+    // var handleTouchEnd = (event) => {
+    //     touchMoveCounter = 0;
+    // }
+    // var handleTouchMove = (event) => {
+    //     if (touchMoveCounter > 10) {
+    //         if (event.touches[0].screenX < touchX) {
+    //             lcolumn = document.getElementsByClassName('page-flex-column-left')
+    //             rcolumn = document.getElementsByClassName('page-flex-column-right')
+    //             lcolumn[0].classList.add('remove-column')
+    //             rcolumn[0].classList.remove('remove-column')
+    //         } else {
+    //             lcolumn = document.getElementsByClassName('page-flex-column-left')
+    //             rcolumn = document.getElementsByClassName('page-flex-column-right')
+    //             rcolumn[0].classList.add('remove-column')
+    //             lcolumn[0].classList.remove('remove-column')
+    //         }
+    //     }
+    //     touchMoveCounter += 1;
+    // }
 
-    document.body.addEventListener('touchstart', handleTouchStart)
-    document.body.addEventListener('touchend', handleTouchEnd)
-    document.body.addEventListener('touchmove', handleTouchMove)
+    // document.body.addEventListener('touchstart', handleTouchStart)
+    // document.body.addEventListener('touchend', handleTouchEnd)
+    // document.body.addEventListener('touchmove', handleTouchMove)
 
 
 
