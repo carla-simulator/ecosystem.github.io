@@ -75,6 +75,7 @@ nav a {
 .toggle {
   order: 1;
   font-size: 20px;
+  color: white;
 }
 
 .item.button {
@@ -149,6 +150,8 @@ nav a {
     flex: 1;
     text-align: right;
     order: 2;
+    cursor: pointer;
+    color: white;
   }
 
   /* Button up from tablet screen */
@@ -214,6 +217,8 @@ nav a {
 
   .toggle {
     display: none;
+    cursor: pointer;
+    color: white;
   }
 
   .submenu-active {
