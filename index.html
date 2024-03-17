@@ -376,7 +376,7 @@
                     data-scroll-class="opacity-full">
                     <div class="page-flex-item"
                         style="flex-basis:0;padding-left:5%;padding-bottom:2%;padding-top:2%;margin-bottom: 1em;">
-                        <a href="https://www.asam.net/"><img src="./img/logos/ansys_logo.svg" width="95%" data-scroll
+                        <a href="https://www.ansys.com/"><img src="./img/logos/ansys_logo.svg" width="95%" data-scroll
                                 data-scroll-class="opacity-full" class="transparent-transition"></a>
                     </div>
                     <div class="company-desc-bg">
@@ -399,7 +399,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>Real time RADAR</h2>
                         <div class="page-flex-item">
@@ -470,7 +470,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>Products</h2>
                         <div class="page-flex-item">
@@ -507,7 +507,7 @@
         <!-----------------------------------------------Community------------------------------------------------------>
         <!---------------------------------------------------------------------------------------------------------------->
         <section data-scroll data-scroll-section data-scroll-id="community_section" id="community_section"
-            style="display: flex; align-items: center;">
+            style="display: flex; align-items: center; height: 100vh;">
             <h1 class="community-title">Open-source community efforts</h1>
         </section>
 
@@ -545,7 +545,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right text-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>Features</h2>
                         <div class="page-flex-item lower-border">
@@ -629,7 +629,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>The Autoware stack</h2>
                         <div class="page-flex-item">
@@ -697,7 +697,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>The ROS ecosystem</h2>
                         <div class="page-flex-item lower-border">
@@ -769,7 +769,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>The SUMO traffic simulator</h2>
                         <div class="page-flex-item">
@@ -830,7 +830,7 @@
                     </div>
                 </div>
                 <div data-scroll class="page-flex-column-right text-right transparent-transition" id="fixed-target"
-                    data-scroll-class="opacity-full" style="padding-left:20%">
+                    data-scroll-class="opacity-full" style="padding-left:10%">
                     <div class="product-desc-bg">
                         <h2>Standards</h2>
                         <div class="page-flex-item lower-border">
@@ -938,11 +938,10 @@
         <!---------------------------------------------------------------------------------------------------------------->
         <!-----------------------------------------------Final Page------------------------------------------------------->
         <!---------------------------------------------------------------------------------------------------------------->
-        <section data-scroll-section class="section2 last-section" data-scroll-id="last_section" id="last_section">
-            <div class="spacer">
-            </div>
+        <section data-scroll-section class="last-section" data-scroll-id="last_section" id="last_section">
+            <div class="spacer"></div>
             <a href="https://www.carla.org">
-                <h2 style="color:white">Visit the CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
+                <h2 style="color:white;">Visit the CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
             </a>
             <br>
             <a href="mailto:carla.simulator@gmail.com">
@@ -1026,6 +1025,15 @@
     //         nav.classList.remove('hidenav')
     //     }
     // })
+
+    scroll.on('scroll', (args) => {
+        if (deltaY > 0) {
+            nav = document.getElementById("nav");
+            nav.classList.add('hidenav')
+        } else {
+            nav.classList.remove('hidenav')
+        }
+    })
 
     var touchMoveCounter = 0;
 

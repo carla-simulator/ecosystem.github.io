@@ -28,14 +28,18 @@ body {
 }
 
 section {
-    height: 100vh;
-    padding: 10vw;
+    /* height: 100vh; */
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vh;
     padding-top: 8vh;
-    position: relative;
+    /* position: relative; */
+    /* box-sizing: content-box; */
 }
 
 section:first-child {
     background-color: rgba(192, 184, 214, 0.85);
+    height: 100vh;
     /* background: rgba(0, 0, 255, 0.86); */
 }
 
@@ -50,6 +54,10 @@ section:nth-child(2n+1) {
 section:last-child {
     background: rgba(52, 131, 151, 0.89);
     color: white;
+}
+
+.last-section {
+    height: 100vh;
 }
 
 .ecosystem-title {
@@ -316,10 +324,6 @@ section p {
     display: inline;
     font-size: 1.5em;
     margin-right: 1em;
-}
-
-.last-section {
-    background-image: url('/img/logos/carla_logo_black.png');
 }
 
 
