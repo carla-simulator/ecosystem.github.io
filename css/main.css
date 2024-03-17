@@ -21,6 +21,12 @@ body {
     background-color: black;
 }
 
+.landing-page {
+    opacity: 1.0;
+    display: flex;
+    justify-content: center;
+}
+
 section {
     height: 100vh;
     padding: 10vw;
@@ -214,12 +220,6 @@ p {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
-}
-
-.landing-page {
-    opacity: 0.9;
-    display: flex;
-    justify-content: center;
 }
 
 .landing-page img {}
