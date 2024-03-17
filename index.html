@@ -940,23 +940,51 @@
         <!---------------------------------------------------------------------------------------------------------------->
         <section data-scroll-section class="last-section" data-scroll-id="last_section" id="last_section">
             <div class="spacer"></div>
-            <a href="https://www.carla.org">
-                <h2 style="color:white;">Visit the CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
-            </a>
-            <br>
-            <a href="mailto:carla.simulator@gmail.com">
-                <h2 class="text-left" style="color:white">Contact the CARLA organisation &nbsp;<i
-                        class="fa-solid fa-envelope"></i></h2>
-            </a>
-            <br>
-            <br>
-            <div>
-                <h2 class="text-left" style="color:white;display:inline;margin-right:2em;"><strong>Social
-                        media:</strong></h2>
-                <span><a href="https://www.linkedin.com/company/carla-simulator"><i class="fab fa-linkedin social"></i></a></span>
-                <span><a href="https://www.youtube.com/@carlasimulator8782"><i class="fab fa-youtube social"></i></a></span>
-                <span><a href="https://twitter.com/carlasimulator"><i class="fab fa-twitter social"></i></a></span>
-                <span><a href="https://github.com/carla-simulator/"><i class="fab fa-github social"></i></a></span>
+            <div class="last-section-desktop">
+                <a href="https://www.carla.org">
+                    <h2 style="color:white;">Visit the CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
+                </a>
+                <br>
+                <a href="mailto:carla.simulator@gmail.com">
+                    <h2 class="text-left" style="color:white">Contact the CARLA organisation &nbsp;<i
+                            class="fa-solid fa-envelope"></i></h2>
+                </a>
+                <br>
+                <br>
+                <div>
+                    <h2 class="text-left" style="color:white;display:inline;margin-right:2em;"><strong>Social
+                            media:</strong></h2>
+                    <span><a href="https://www.linkedin.com/company/carla-simulator"><i
+                                class="fab fa-linkedin social"></i></a></span>
+                    <span><a href="https://www.youtube.com/@carlasimulator8782"><i
+                                class="fab fa-youtube social"></i></a></span>
+                    <span><a href="https://twitter.com/carlasimulator"><i class="fab fa-twitter social"></i></a></span>
+                    <span><a href="https://github.com/carla-simulator/"><i class="fab fa-github social"></i></a></span>
+                </div>
+            </div>
+            <div class="last-section-mobile">
+                <a href="https://www.carla.org">
+                    <h2 style="color:white;">CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
+                </a>
+                <br>
+                <a href="mailto:carla.simulator@gmail.com">
+                    <h2 class="text-left" style="color:white">Contact CARLA &nbsp;<i
+                            class="fa-solid fa-envelope"></i></h2>
+                </a>
+                <br>
+                <br>
+                <div>
+                    <h2 class="text-left" style="color:white;display:inline;margin-right:2em;"><strong>Social
+                            media:</strong></h2>
+                    <br>
+                    <br>
+                    <span><a href="https://www.linkedin.com/company/carla-simulator"><i
+                                class="fab fa-linkedin social"></i></a></span>
+                    <span><a href="https://www.youtube.com/@carlasimulator8782"><i
+                                class="fab fa-youtube social"></i></a></span>
+                    <span><a href="https://twitter.com/carlasimulator"><i class="fab fa-twitter social"></i></a></span>
+                    <span><a href="https://github.com/carla-simulator/"><i class="fab fa-github social"></i></a></span>
+                </div>
             </div>
 
         </section>
@@ -1081,25 +1109,37 @@
 
     var toggle = document.querySelector(".toggle");
 
+    var newToggle = null;
+
+    function addBurger() {
+        menu.classList.remove("active");
+        // adds the menu (hamburger) icon
+        var toggleParent = toggle.parentNode;
+        newToggle = toggle.cloneNode(true)
+        newToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        toggleParent.replaceChild(newToggle, toggle)
+        newToggle.addEventListener("click", toggleMenu, false);
+        toggle = newToggle;
+    }
+    function addX() {
+        menu.classList.add("active");
+        // adds the close (x) icon
+        var toggleParent = toggle.parentNode;
+        newToggle = toggle.cloneNode(true)
+        newToggle.innerHTML = '<i class="fas fa-times"></i>';
+        toggleParent.replaceChild(newToggle, toggle)
+        newToggle.addEventListener("click", toggleMenu, false);
+        toggle = newToggle;
+    }
+
     function toggleMenu() {
         console.log('toggle')
         if (menu.classList.contains("active")) {
-            menu.classList.remove("active");
-            // adds the menu (hamburger) icon
-            var toggleParent = toggle.parentNode;
-            var newToggle = toggle.cloneNode(true)
-            newToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            toggleParent.replaceChild(newToggle, toggle)
+            addBurger();
         } else {
-            menu.classList.add("active");
-            // adds the close (x) icon
-            var toggleParent = toggle.parentNode;
-            var newToggle = toggle.cloneNode(true)
-            newToggle.innerHTML = '<i class="fas fa-times"></i>';
-            toggleParent.replaceChild(newToggle, toggle)
+            addX();
+            setTimeout(addBurger, 3000);
         }
-        newToggle.addEventListener("click", toggleMenu, false);
-        toggle = newToggle;
     }
 
     /* Event Listener */

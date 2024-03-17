@@ -194,6 +194,11 @@ p {
         /* min-width: 100%;  */
         /* padding-left: 20%; */
     }
+    .last-section-mobile {
+        position: absolute;
+        transform: scale(0);
+    }
+
 
 }
 
@@ -209,6 +214,11 @@ p {
         padding-left: 20%;
         position: absolute;
         transform: scale(0,0);
+    }
+
+    .last-section-desktop {
+        position: absolute;
+        transform: scale(0);
     }
 
 }

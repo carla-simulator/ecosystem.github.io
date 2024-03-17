@@ -10,7 +10,8 @@
   } */
 nav {
   background-color: rgba(0, 0, 0, 0.637);
-  padding: 0 15px;
+  /* padding: 0 15px; */
+  padding-right: 2em;
   border-bottom: solid 1px white;
   border-top: solid 1px black;
   z-index: 1000;
@@ -74,7 +75,7 @@ nav a {
 
 .toggle {
   order: 1;
-  font-size: 20px;
+  font-size: 2em;
   color: white;
 }
 
