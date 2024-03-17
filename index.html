@@ -25,8 +25,8 @@
             <li class="item"><a href="https://carla.readthedocs.io/en/latest/">Documentation</a></li>
             <li class="item"><a href="https://github.com/carla-simulator/carla">GitHub</a></li>
             <li class="item"><a href="https://www.carla.org/services/">Services</a></li>
-            <li class="item"><a href="https://www.carla.org/services/">Contact</a></li>
-            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            <li class="item"><a href="https://www.carla.org/contact/">Contact</a></li>
+            <li type="button" class="toggle" id="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
 
@@ -1069,20 +1069,29 @@
 
     // ************************************************ NAV
 
-    const toggle = document.querySelector(".toggle");
     const menu = document.querySelector(".menu");
 
-    /* Toggle mobile menu */
+    var toggle = document.querySelector(".toggle");
+
     function toggleMenu() {
+        console.log('toggle')
         if (menu.classList.contains("active")) {
             menu.classList.remove("active");
             // adds the menu (hamburger) icon
-            toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
+            var toggleParent = toggle.parentNode;
+            var newToggle = toggle.cloneNode(true)
+            newToggle.querySelector("a").innerHTML = '<i class="fas fa-bars"></i>';
+            toggleParent.replaceChild(newToggle, toggle)
         } else {
             menu.classList.add("active");
             // adds the close (x) icon
-            toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
+            var toggleParent = toggle.parentNode;
+            var newToggle = toggle.cloneNode(true)
+            newToggle.querySelector("a").innerHTML = '<i class="fas fa-times"></i>';
+            toggleParent.replaceChild(newToggle, toggle)
         }
+        newToggle.addEventListener("click", toggleMenu, false);
+        toggle = newToggle;
     }
 
     /* Event Listener */
