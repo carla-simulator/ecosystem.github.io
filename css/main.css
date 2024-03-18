@@ -38,6 +38,10 @@ section {
     /* box-sizing: content-box; */
 }
 
+section a:hover {
+    color: #88a2ac;
+}
+
 section:first-child {
     background-color: rgba(192, 184, 214, 0.85);
     height: 100vh;
@@ -273,14 +277,17 @@ section p {
     transition: opacity 5s;
 }
 
+@supports (transition: initial) {
+
 .transparent-transition {
     opacity: 0;
-    transition: opacity 4s;
+    transition: opacity 1s;
 }
 
 .transparent-transition-fast {
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 0.8s;
+}
 }
 
 .opacity-full {
