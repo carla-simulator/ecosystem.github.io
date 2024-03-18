@@ -954,7 +954,7 @@
                     <h2 style="color:white;">Visit the CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
                 </a>
                 <br>
-                <a href="mailto:carla.simulator@gmail.com">
+                <a href="https://carla.org/contact/">
                     <h2 class="text-left" style="color:white">Contact the CARLA organisation &nbsp;<i
                             class="fa-solid fa-envelope"></i></h2>
                 </a>
@@ -977,7 +977,7 @@
                     <h2 style="color:white;">CARLA website <i class="fa-solid fa-chevron-right"></i></h2>
                 </a>
                 <br>
-                <a href="mailto:carla.simulator@gmail.com">
+                <a href="https://carla.org/contact/">
                     <h2 class="text-left" style="color:white">Contact CARLA &nbsp;<i class="fa-solid fa-envelope"></i>
                     </h2>
                 </a>
@@ -1126,6 +1126,8 @@
 
     var newToggle = null;
 
+    var timeoutID = null;
+
     function addBurger() {
         menu.classList.remove("active");
         // adds the menu (hamburger) icon
@@ -1149,10 +1151,11 @@
 
     function toggleMenu() {
         if (menu.classList.contains("active")) {
+            clearTimeout(timeoutID)
             addBurger();
         } else {
             addX();
-            setTimeout(addBurger, 4000);
+            timeoutID = setTimeout(addBurger, 6000);
         }
     }
 
