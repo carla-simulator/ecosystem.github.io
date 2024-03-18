@@ -1034,7 +1034,15 @@
     var scrollLock = false;
     var deltaY = 0;
 
-    addEventListener("wheel", (event) => { deltaY = event.deltaY });
+    addEventListener("wheel", (event) => { 
+        deltaY = event.deltaY;
+        if (deltaY > 0) {
+            nav = document.getElementById("nav");
+            nav.classList.add('hidenav')
+        } else {
+            nav.classList.remove('hidenav')
+        }
+     });
 
     // addEventListener("resize", (event) => { scrollLock = true; setTimeout(() => { scrollLock = false; }, 100) });
 
@@ -1064,14 +1072,14 @@
     //     }
     // })
 
-    scroll.on('scroll', (args) => {
-        if (deltaY > 0) {
-            nav = document.getElementById("nav");
-            nav.classList.add('hidenav')
-        } else {
-            nav.classList.remove('hidenav')
-        }
-    })
+    // scroll.on('scroll', (args) => {
+    //     if (deltaY > 0) {
+    //         nav = document.getElementById("nav");
+    //         nav.classList.add('hidenav')
+    //     } else {
+    //         nav.classList.remove('hidenav')
+    //     }
+    // })
 
     var touchMoveCounter = 0;
 
@@ -1140,12 +1148,11 @@
     }
 
     function toggleMenu() {
-        console.log('toggle')
         if (menu.classList.contains("active")) {
             addBurger();
         } else {
             addX();
-            setTimeout(addBurger, 3000);
+            setTimeout(addBurger, 4000);
         }
     }
 

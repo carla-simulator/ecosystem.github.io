@@ -172,7 +172,7 @@ p {
     flex-direction: column;
     flex-shrink: 1;
     flex-grow: 1;
-    
+
     flex-basis: 0;
     /* width: 100%; */
     /* overflow: hidden;
@@ -181,7 +181,7 @@ p {
 
 .remove-column {
     position: absolute;
-    transform: scale(0,1);
+    transform: scale(0, 1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -193,7 +193,7 @@ p {
     .landing-page-spacer {
         height: 8vh;
     }
-    
+
     .page-flex-column-right {
         display: flex;
         flex-direction: column;
@@ -203,6 +203,7 @@ p {
         /* min-width: 100%;  */
         /* padding-left: 20%; */
     }
+
     .last-section-mobile {
         position: absolute;
         transform: scale(0);
@@ -226,7 +227,7 @@ p {
         /* min-width: 100%;  */
         padding-left: 20%;
         position: absolute;
-        transform: scale(0,0);
+        transform: scale(0, 0);
     }
 
     .last-section-desktop {
@@ -279,15 +280,16 @@ section p {
 
 @supports (transition: initial) {
 
-.transparent-transition {
-    opacity: 1.0;
-    transition: opacity 1s;
-}
+    .transparent-transition {
+        opacity: 1.0;
+        transition: opacity 1s;
+    }
 
-.transparent-transition-fast {
-    opacity: 1.0;
-    transition: opacity 0.8s;
-}
+    .transparent-transition-fast {
+        opacity: 1.0;
+        transition: opacity 0.8s;
+    }
+    
 }
 
 .opacity-full {
@@ -351,8 +353,3 @@ section p {
     font-size: 1.5em;
     margin-right: 1em;
 }
-
-
-
-
-
