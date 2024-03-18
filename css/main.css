@@ -273,19 +273,19 @@ section p {
 }
 
 .custom-p {
-    opacity: 0;
+    opacity: 1.0;
     transition: opacity 5s;
 }
 
 @supports (transition: initial) {
 
 .transparent-transition {
-    opacity: 0;
+    opacity: 1.0;
     transition: opacity 1s;
 }
 
 .transparent-transition-fast {
-    opacity: 0;
+    opacity: 1.0;
     transition: opacity 0.8s;
 }
 }
