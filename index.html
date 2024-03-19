@@ -1034,8 +1034,14 @@
     var scrollLock = false;
     var deltaY = 0;
 
-    addEventListener("wheel", (event) => { 
-        deltaY = event.deltaY;
+    const element = document.getElementsByTagName("body");
+
+    var prevYoffset = 0;
+
+    addEventListener("scroll", (event) => { 
+        console.log(window.pageYOffset)
+        deltaY = window.pageYOffset - prevYoffset;
+        prevYoffset = window.pageYOffset;
         if (deltaY > 0) {
             nav = document.getElementById("nav");
             nav.classList.add('hidenav')
@@ -1043,43 +1049,6 @@
             nav.classList.remove('hidenav')
         }
      });
-
-    // addEventListener("resize", (event) => { scrollLock = true; setTimeout(() => { scrollLock = false; }, 100) });
-
-    // scroll.on('scroll', (args) => {
-    //     if (!scrollLock) {
-    //         scroll_count += 1;
-    //     }
-    //     console.log(currentSection)
-    //     if (scroll_count > 10 & !scrollLock & !ismobile) {
-    //         console.log('move')
-    //         scrollLock = true;
-    //         scroll_count = 0;
-    //         if (deltaY > 0) {
-    //             currentSection += 1;
-    //         } else {
-    //             currentSection -= 1;
-    //         }
-    //         if (currentSection < 0) { currentSection = 0; }
-    //         if (currentSection >= sections.length) { currentSection = sections.length - 1 }
-    //         scroll.scrollTo(document.querySelector(sections[currentSection]), { duration: 200, callback: () => { setTimeout(function () { console.log(sections[currentSection]); scrollLock = false; }, 1000) } })
-    //     }
-    //     if (deltaY > 0) {
-    //         nav = document.getElementById("nav");
-    //         nav.classList.add('hidenav')
-    //     } else {
-    //         nav.classList.remove('hidenav')
-    //     }
-    // })
-
-    // scroll.on('scroll', (args) => {
-    //     if (deltaY > 0) {
-    //         nav = document.getElementById("nav");
-    //         nav.classList.add('hidenav')
-    //     } else {
-    //         nav.classList.remove('hidenav')
-    //     }
-    // })
 
     var touchMoveCounter = 0;
 

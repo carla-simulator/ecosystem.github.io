@@ -17,6 +17,9 @@ nav {
   z-index: 1000;
   position: fixed;
   width: 100%;
+
+  transition-timing-function: ease-in;
+  transition: 0.3s;
 }
 
 @media all and (max-width: 700px) {
