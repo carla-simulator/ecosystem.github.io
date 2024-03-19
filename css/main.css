@@ -150,11 +150,6 @@ p {
     font-size: small;
 }
 
-.carla-bg {
-    background-size: cover;
-    background-image: url('/img/lincoln_carla.png');
-}
-
 .page-flex-container {
     display: flex;
     flex-direction: row;
