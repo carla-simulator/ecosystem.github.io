@@ -25,6 +25,7 @@ body {
     opacity: 1.0;
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 section {
@@ -43,7 +44,7 @@ section a:hover {
 }
 
 section:first-child {
-    background-color: rgba(192, 184, 214, 0.85);
+    background-color: black;
     height: 100vh;
     /* background: rgba(0, 0, 255, 0.86); */
 }
@@ -192,6 +193,7 @@ p {
 
     .landing-page-spacer {
         height: 8vh;
+        background-color: black;
     }
 
     .page-flex-column-right {
