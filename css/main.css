@@ -166,6 +166,10 @@ section:last-child {
     }
 }
 
+.disable-touch {
+    touch-action: none;
+}
+
 a {
     font-weight: bold;
     color: #4b4b4b;
