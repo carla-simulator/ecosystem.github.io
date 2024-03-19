@@ -13,18 +13,18 @@ body {
     /* text-transform: uppercase; */
     text-align: justify;
     word-break: normal;
+    background-color: black;
+
     /* background-color: #d4d5d8ef; */
-    background-image: url('../img/lincoln_bg_cropped.png');
+    /* background-image: url('../img/lincoln_bg_cropped.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: black;
-
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-    background-size: contain;
+    background-size: contain; */
 }
 
 body:before {
