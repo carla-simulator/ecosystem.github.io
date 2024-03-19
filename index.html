@@ -1039,9 +1039,9 @@
     var prevYoffset = 0;
 
     addEventListener("scroll", (event) => { 
-        console.log(window.pageYOffset)
         deltaY = window.pageYOffset - prevYoffset;
         prevYoffset = window.pageYOffset;
+        if (window.pageYOffset < 50) return;
         if (deltaY > 0) {
             nav = document.getElementById("nav");
             nav.classList.add('hidenav')
