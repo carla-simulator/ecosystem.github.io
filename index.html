@@ -1006,6 +1006,11 @@
 <script src="js/locomotive-scroll.min.js"></script>
 <script>
 
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+    console.log('VP width: ' + vw + ' | height: ' + vh)
+
     // Create a MediaQueryList object
     var ismobileQuery = window.matchMedia("(max-width: 700px)")
 
