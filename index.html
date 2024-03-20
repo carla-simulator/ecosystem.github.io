@@ -1088,9 +1088,6 @@
 
     // document.body.addEventListener('touchstart', handleTouchStart)
     // document.body.addEventListener('touchend', handleTouchEnd)
-    // document.body.addEventListener('touchmove', handleTouchMove)
-
-
 
     // ************************************************ NAV
 
@@ -1111,6 +1108,8 @@
         toggleParent.replaceChild(newToggle, toggle)
         newToggle.addEventListener("click", toggleMenu, false);
         toggle = newToggle;
+        scrollLock = false;
+        document.body.classList.remove('disable-touch')
     }
     function addX() {
         menu.classList.add("active");
@@ -1121,6 +1120,8 @@
         toggleParent.replaceChild(newToggle, toggle)
         newToggle.addEventListener("click", toggleMenu, false);
         toggle = newToggle;
+        scrollLock = true;
+        document.body.classList.add('disable-touch')
     }
 
     function toggleMenu() {
